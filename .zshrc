@@ -14,12 +14,14 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-alias open='xdg-open'
-alias vpn='expressvpn status | grep "Connected"'
-alias upgrade='sudo apt-get upgrade'
-alias update='sudo apt-get update'
-alias say='echo "$1" | espeak -s 120 2>/dev/null'
-# pactl set-default-sink 0
+if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+  alias open='xdg-open'
+  alias vpn='expressvpn status | grep "Connected"'
+  alias upgrade='sudo apt-get upgrade'
+  alias update='sudo apt-get update'
+  alias say='echo "$1" | espeak -s 120 2>/dev/null'
+  alias soundfix="pulseaudio --kill; pulseaudio --start"
+fi
 
 alias gcm='git commit'
 alias gch='git checkout'
@@ -35,11 +37,8 @@ alias gcl='git clone'
 alias gsh='git stash'
 alias gsp='git stash pop'
 
-#[ -f ~/.fzf.bash ] && source ~/.fzf.bash
-
 alias cl='clear'
 alias bdl='cd ~/.vim/bundle'
-alias soundfix="pulseaudio --kill; pulseaudio --start"
 
 gll() {
   local out sha q
@@ -81,4 +80,4 @@ gls() {
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-alias dotfiles='/usr/bin/git --git-dir=/home/adam/.dotfiles/ --work-tree=/home/adam'
+alias dotfiles='/usr/bin/git --git-dir=~/.dotfiles/ --work-tree=~'
