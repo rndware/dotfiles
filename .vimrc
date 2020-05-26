@@ -15,7 +15,7 @@ set clipboard=unnamedplus
 set ignorecase
 filetype plugin on
 
-let g:airline_theme='minimalist'
+let g:airline_theme='gruvbox'
 set t_Co=256
 
 nnoremap d "xd
