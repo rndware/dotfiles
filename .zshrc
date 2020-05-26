@@ -57,8 +57,6 @@ alias glNoGraph='git log --color=always --format="%C(auto)%h%d %s %C(black)%C(bo
 _gitLogLineToHash="echo {} | grep -o '[a-f0-9]\{7\}' | head -1"
 _viewGitLogLine="$_gitLogLineToHash | xargs -I % sh -c 'git show --color=always % | diff-so-fancy'"
 
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-
 # fcoc_preview - checkout git commit with previews
 glsc() {
   local commit
@@ -80,4 +78,4 @@ gls() {
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-alias dotfiles='/usr/bin/git --git-dir=~/.dotfiles/ --work-tree=~'
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
