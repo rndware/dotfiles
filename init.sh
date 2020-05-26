@@ -3,9 +3,8 @@
 rm -rf .zshrc;
 rm -rf .vimrc;
 
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME';
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME pull;
 
-dotfiles pull;
 source ~/.zshrc;
 
 rm -rf README.md;
