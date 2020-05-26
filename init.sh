@@ -3,9 +3,9 @@
 rm -rf .zshrc;
 rm -rf .vimrc;
 
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME';
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME pull;
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME reset --hard origin/master;
 
-dotfiles pull;
 source ~/.zshrc;
 
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
