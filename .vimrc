@@ -1,4 +1,4 @@
-    " contents of minimal .vimrc
+	" contents of minimal .vimrc
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
@@ -42,9 +42,11 @@ nmap <Leader>r :Farr<CR>
 nmap J <C-w>h
 nmap K <C-w>l
 nmap <Leader>gb :<C-u>call gitblame#echo()<CR>
+nmap <leader>] >>
+nmap <leader>[ <<
 noremap <Leader>y "+y
 
-  set shiftwidth=2
+set shiftwidth=2
 
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
