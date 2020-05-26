@@ -11,7 +11,7 @@ Alias to the scrope of the current shell
 ```
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 ```
-Checkout the files
+Run init command
 ```
-dotfiles checkout && rm -rf README.md
+./init.sh
 ```
