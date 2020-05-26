@@ -12,6 +12,10 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
   cp settings.json ~/.config/Code/User;
 fi
 
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  cp settings.json ~/Library/Application\ Support/Code/User;
+fi
+
 rm -rf settings.json;
 rm -rf README.md;
 rm -rf init.sh;
