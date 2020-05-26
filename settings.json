@@ -1,0 +1,81 @@
+{
+  "workbench.iconTheme": "vs-minimal",
+  "workbench.colorTheme": "Monokai",
+  "workbench.editor.showTabs": false,
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "vim.leader": "<space>",
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<Leader>", "e"],
+      "commands": [
+        "workbench.files.action.focusFilesExplorer"
+      ]
+    },
+    {
+      "before": ["<Leader>", "q"],
+      "commands": [
+        "workbench.action.quit"
+      ]
+    },
+    {
+      "before": ["<Leader>", "w"],
+      "commands": [
+        ":q"
+      ]
+    },
+    {
+      "before": ["<Leader>", "d"],
+      "commands": [
+        "workbench.action.splitEditorRight"
+      ]
+    },
+    {
+      "before": ["<Leader>", "s"],
+      "commands": [
+        "workbench.action.files.save"
+      ]
+    },
+    {
+      "before": ["J"],
+      "commands": [
+        "workbench.action.navigateLeft"
+      ]
+    },
+    {
+      "before": ["K"],
+      "commands": [
+        "workbench.action.navigateRight"
+      ]
+    },
+    {
+      "before": ["<Leader>", "p"],
+      "commands": [
+        "workbench.action.quickOpen"
+      ]
+    },
+    {
+      "before": ["<Leader>", "f"],
+      "commands": [
+        "workbench.action.findInFiles"
+      ]
+    },
+    {
+      "before": ["d"],
+      "after": [ "\"", "_", "d" ]
+    },
+    {
+      "before": [
+        "="
+      ],
+      "after": [],
+      "commands": [
+        {
+          "command": "editor.action.reindentlines",
+          "args": []
+        }
+      ]
+    }
+  ],
+  "vscode-w3cvalidation.validator-token": "Thu, 21 May 2020 15:35:20 GMT",
+}
