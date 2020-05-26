@@ -13,5 +13,5 @@ alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 ```
 Checkout the files
 ```
-dotfiles checkout
+dotfiles checkout && rm -rf README.md
 ```
