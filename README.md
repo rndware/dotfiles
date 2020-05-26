@@ -1,5 +1,5 @@
 # dotfiles
-Backup of my dotfiles
+Backup of my dotfiles and vscode settings
 
 ## Install steps
 
