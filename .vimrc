@@ -46,7 +46,18 @@ nmap <leader>] >>
 nmap <leader>[ <<
 noremap <Leader>y "+y
 
-let g:move_key_modifier = 'C'
+let c='a'
+while c <= 'z'
+  exec "set <A-".c.">=\e".c
+  exec "imap \e".c." <A-".c.">"
+  let c = nr2char(1+char2nr(c))
+endw
+
+let g:move_map_keys = 0
+nmap <A-Up> <Plug>MoveLineUp
+nmap <A-Down> <Plug>MoveLineDown
+vmap <A-Up> <Plug>MoveBlockUp
+vmap <A-Down> <Plug>MoveBlockDown
 
 set shiftwidth=2
 
