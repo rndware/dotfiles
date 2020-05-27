@@ -46,6 +46,8 @@ nmap <leader>] >>
 nmap <leader>[ <<
 noremap <Leader>y "+y
 
+let g:move_key_modifier = 'C'
+
 set shiftwidth=2
 
 vnoremap J :m '>+1<CR>gv=gv
