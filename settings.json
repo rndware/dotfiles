@@ -61,6 +61,12 @@
       ]
     },
     {
+      "before": ["<Leader>", "/"],
+      "commands": [
+        "editor.action.commentLine"
+      ] 
+    },
+    {
       "before": ["d"],
       "after": [ "\"", "_", "d" ]
     },
