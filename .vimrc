@@ -39,6 +39,10 @@ nmap <Leader>p :FZF<CR>
 nmap <Leader>n :NERDTree<CR>
 nmap <Leader>d :vsplit<CR>
 nmap <Leader>r :Farr<CR>
+nmap <Leader>ks :G<CR>
+nmap <Leader>kc :Gcommit<CR>
+nmap <Leader>kp :Gpush<CR>
+
 nmap J <C-w>h
 nmap K <C-w>l
 nmap <Leader>gb :<C-u>call gitblame#echo()<CR>

@@ -36,6 +36,7 @@ alias gad='git add'
 alias gcl='git clone'
 alias gsh='git stash'
 alias gsp='git stash pop'
+alias gmr='git merge'
 
 alias cl='clear'
 alias bdl='cd ~/.vim/bundle'
