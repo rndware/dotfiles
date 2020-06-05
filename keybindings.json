@@ -1,0 +1,30 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "ctrl+shift+i",
+        "command": "toggleVim"
+    },
+    {
+        "key": "ctrl+shift+s",
+        "command": "git.stage"
+    },
+    {
+        "key": "ctrl+shift+u",
+        "command": "git.unstage"
+    },
+    {
+        "key": "r",
+        "command": "renameFile",
+        "when": "explorerViewletVisible && filesExplorerFocus"
+    },
+    {
+        "key": "i",
+        "command": "explorer.newFile",
+        "when": "explorerViewletVisible && filesExplorerFocus"
+    },
+    {
+        "key": "o",
+        "command": "explorer.newFolder",
+        "when": "explorerViewletVisible && filesExplorerFocus"
+    }
+]
