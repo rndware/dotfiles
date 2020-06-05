@@ -5,11 +5,11 @@
         "command": "toggleVim"
     },
     {
-        "key": "ctrl+shift+s",
+        "key": "cmd+shift+s",
         "command": "git.stage"
     },
     {
-        "key": "ctrl+shift+u",
+        "key": "cmd+shift+u",
         "command": "git.unstage"
     },
     {
