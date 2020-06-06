@@ -61,6 +61,22 @@
         "workbench.action.findInFiles"
       ]
     },
+     {
+      "before": ["<Leader>", "k","s"],
+      "commands": [
+        "workbench.view.scm"
+      ]
+    },
+    {
+      "before": ["<Leader>", "k", "p"],
+      "commands": [
+        "git.push"
+      ]
+    },
+    {
+      "before": ["<Leader>", "r", "n"],
+      "commands": ["editor.action.rename"]
+    },
     {
       "before": ["d"],
       "after": [ "\"", "_", "d" ]
