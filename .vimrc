@@ -4,6 +4,7 @@ syntax on
 filetype plugin indent on
 set autoindent
 set number
+set nohlsearch
 set belloff=all
 set noswapfile
 set nobackup
@@ -15,7 +16,9 @@ set clipboard=unnamedplus
 set ignorecase
 filetype plugin on
 
-let g:airline_theme='gruvbox'
+"let g:airline_theme='gruvbox'
+let g:airline_theme='onehalfdark'
+
 set t_Co=256
 
 nnoremap d "xd
@@ -23,8 +26,9 @@ nnoremap d "xd
 let g:ycm_key_list_select_completion=[]
 let g:ycm_key_list_previous_completion=[]
 
-colorscheme gruvbox
-"colorscheme monokai
+"colorscheme gruvbox
+colorscheme onehalfdark
+
 set bg=dark
 :map <C-p> :FZF<CR>
 :map <C-S-f> :Ag<CR>
@@ -38,7 +42,7 @@ nmap <Leader>f :Ag<CR>
 nmap <Leader>p :FZF<CR>
 nmap <Leader>n :NERDTree<CR>
 nmap <Leader>d :vsplit<CR>
-nmap <Leader>r :Farr<CR>
+nmap <Leader>rn :Farr<CR>
 nmap <Leader>ks :G<CR>
 nmap <Leader>kc :Gcommit<CR>
 nmap <Leader>kp :Gpush<CR>
