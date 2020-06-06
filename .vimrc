@@ -73,7 +73,6 @@ if (has("termguicolors"))
   set termguicolors
 endif
 
-
 let g:move_map_keys = 0
 nmap <A-Up> <Plug>MoveLineUp
 nmap <A-Down> <Plug>MoveLineDown
