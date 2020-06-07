@@ -54,6 +54,11 @@ nmap <leader>] >>
 nmap <leader>[ <<
 noremap <Leader>y "+y
 
+nnoremap x "_x
+nnoremap d "_d
+nnoremap D "_D
+vnoremap d "_d
+
 let c='a'
 while c <= 'z'
   exec "set <A-".c.">=\e".c
