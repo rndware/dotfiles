@@ -46,6 +46,9 @@ nmap <Leader>rn :Farr<CR>
 nmap <Leader>ks :G<CR>
 nmap <Leader>kc :Gcommit<CR>
 nmap <Leader>kp :Gpush<CR>
+nmap <Leader>= :Prettier<CR>
+
+let g:prettier#config#single_quote = 'true'
 
 nmap J <C-w>h
 nmap K <C-w>l
