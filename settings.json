@@ -82,6 +82,10 @@
       "after": [ "\"", "_", "d" ]
     },
     {
+      "before": ["<leader>", "="],
+      "commands": ["editor.action.formatDocument"]
+    },
+    {
       "before": [
         "="
       ],
