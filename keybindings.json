@@ -5,12 +5,19 @@
         "command": "toggleVim"
     },
     {
-        "key": "ctrl+shift+s",
-        "command": "git.stage"
+        "key": "a",
+        "command": "git.stageAll",
+        "when": "sideBarFocus && activeViewlet == 'workbench.view.scm'"
+    }
+    {
+        "key": "s",
+        "command": "git.stage",
+        "when": "sideBarFocus && activeViewlet == 'workbench.view.scm'"
     },
     {
-        "key": "ctrl+shift+u",
-        "command": "git.unstage"
+        "key": "u",
+        "command": "git.unstage",
+        "when": "sideBarFocus && activeViewlet == 'workbench.view.scm'"
     },
     {
         "key": "r",
