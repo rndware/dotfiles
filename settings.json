@@ -86,6 +86,10 @@
       "commands": ["editor.action.formatDocument"]
     },
     {
+      "before": ["<Leader>", "/"],
+      "commands": ["editor.action.commentLine"]
+    },
+    {
       "before": [
         "="
       ],
