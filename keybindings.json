@@ -20,6 +20,21 @@
         "when": "sideBarFocus && activeViewlet == 'workbench.view.scm'"
     },
     {
+        "key": "ctrl+e",
+        "command": "workbench.view.explorer",
+        "when": "sideBarFocus && activeViewlet == 'workbench.view.scm'"
+    },
+    {
+        "key": "shift+k",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "sideBarFocus && activeViewlet == 'workbench.view.scm'"
+    },
+    {
+        "key": "shift+k",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "explorerViewletVisible && filesExplorerFocus"
+    },
+    {
         "key": "r",
         "command": "renameFile",
         "when": "explorerViewletVisible && filesExplorerFocus"
