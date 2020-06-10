@@ -8,7 +8,7 @@
         "key": "a",
         "command": "git.stageAll",
         "when": "sideBarFocus && activeViewlet == 'workbench.view.scm'"
-    }
+    },
     {
         "key": "s",
         "command": "git.stage",
