@@ -47,6 +47,8 @@ nmap <Leader>ks :G<CR>
 nmap <Leader>kc :Gcommit<CR>
 nmap <Leader>kp :Gpush<CR>
 nmap <Leader>= :Prettier<CR>
+nmap <Leader>/ gcc
+nmap s <Plug>(easymotion-overwin-f2)
 
 let g:prettier#config#single_quote = 'true'
 
@@ -61,6 +63,8 @@ nnoremap x "_x
 nnoremap d "_d
 nnoremap D "_D
 vnoremap d "_d
+
+let g:EasyMotion_smartcase = 1
 
 let c='a'
 while c <= 'z'
