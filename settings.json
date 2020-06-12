@@ -83,6 +83,10 @@
       "after": ["<leader>", "<leader>", "2", "s"]
     },
     {
+      "before": ["<leader>", "h","u"],
+      "commands": ["git.revertSelectedRanges"]
+    },
+    {
       "before": ["d"],
       "after": [ "\"", "_", "d" ]
     },
