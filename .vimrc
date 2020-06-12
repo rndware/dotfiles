@@ -52,8 +52,11 @@ nmap s <Plug>(easymotion-overwin-f2)
 
 let g:prettier#config#single_quote = 'true'
 
-nmap J <C-w>h
-nmap K <C-w>l
+nmap <silent> <leader>j :wincmd h<CR>
+nmap <silent> <leader>k :wincmd l<CR>
+nmap <silent> J :wincmd h<CR>
+nmap <silent> K :wincmd l<CR>
+
 nmap <Leader>gb :<C-u>call gitblame#echo()<CR>
 nmap <leader>] >>
 nmap <leader>[ <<
