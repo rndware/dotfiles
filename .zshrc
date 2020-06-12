@@ -41,6 +41,7 @@ alias gmr='git merge'
 alias cl='clear'
 alias bdl='cd ~/.vim/bundle'
 alias kl='kill %1'
+alias cde='code'
 
 gll() {
   local out sha q
