@@ -1,4 +1,5 @@
 {
+  "vim.easymotion": true,
   "workbench.iconTheme": "vs-minimal",
   "workbench.colorTheme": "Monokai",
   "workbench.editor.showTabs": false,
@@ -76,6 +77,10 @@
     {
       "before": ["<Leader>", "r", "n"],
       "commands": ["editor.action.rename"]
+    },
+    {
+      "before": ["s"],
+      "after": ["<leader>", "<leader>", "2", "s"]
     },
     {
       "before": ["d"],
