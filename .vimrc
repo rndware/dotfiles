@@ -41,6 +41,7 @@ nmap <Leader>w :q<CR>
 nmap <Leader>f :Ag<CR>
 nmap <Leader>p :FZF<CR>
 nmap <Leader>n :NERDTree<CR>
+nmap <leader>vn :NERDTreeFind<CR>
 nmap <Leader>d :vsplit<CR>
 nmap <Leader>rn :Farr<CR>
 nmap <Leader>ks :G<CR>
