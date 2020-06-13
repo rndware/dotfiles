@@ -56,7 +56,7 @@ let g:prettier#config#single_quote = 'true'
 nmap <silent> <leader>j :wincmd h<CR>
 nmap <silent> <leader>k :wincmd l<CR>
 nmap <silent> J :wincmd h<CR>
-nmap <silent> K :wincmd l<CR>
+nmap <silent> ; :wincmd l<CR>
 
 nmap <Leader>gb :<C-u>call gitblame#echo()<CR>
 nmap <leader>] >>
