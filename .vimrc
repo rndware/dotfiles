@@ -1,8 +1,41 @@
 	" contents of minimal .vimrc
-execute pathogen#infect()
+call plug#begin('~/.vim/plugged')
+
+Plug 'sonph/onehalf', {'rtp': 'vim/'}
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'sonph/onehalf'
+Plug 'tpope/vim-surround'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'brooth/far.vim'
+Plug 'scrooloose/nerdcommenter'
+Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'marcweber/vim-addon-mw-utils'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+Plug 'easymotion/vim-easymotion'
+Plug 'pangloss/vim-javascript'
+Plug 'mitermayer/vim-prettier'
+Plug 'garbas/vim-snipmate'
+Plug 'prettier/vim-prettier', { 'do': 'npm install', 'branch': 'release/0.x' }
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'gregsexton/matchtag'
+
+Plug 'ap/vim-css-color'
+
+Plug 'grvcoelho/vim-javascript-snippets'
+
+Plug 'garbas/vim-snipmate'
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'tomtom/tlib_vim'
+
+call plug#end()
+
 syntax on
 filetype plugin indent on
 set autoindent
+set mouse=a
 set number
 set nohlsearch
 set belloff=all
@@ -51,6 +84,9 @@ nmap <Leader>= :Prettier<CR>
 nmap <Leader>/ gcc
 nmap s <Plug>(easymotion-overwin-f2)
 
+nmap <Leader>gd <Plug>(coc-definition)
+nmap <Leader>gr <Plug>(coc-references)
+
 let g:prettier#config#single_quote = 'true'
 
 nmap <silent> <leader>j :wincmd h<CR>
@@ -69,13 +105,6 @@ nnoremap D "_D
 vnoremap d "_d
 
 let g:EasyMotion_smartcase = 1
-
-let c='a'
-while c <= 'z'
-  exec "set <A-".c.">=\e".c
-  exec "imap \e".c." <A-".c.">"
-  let c = nr2char(1+char2nr(c))
-endw
 
 if (has("nvim"))
   "For Neovim 0.1.3 and 0.1.4 < https://github.com/neovim/neovim/pull/2198 >
