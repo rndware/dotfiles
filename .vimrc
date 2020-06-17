@@ -5,7 +5,10 @@ Plug 'sonph/onehalf', {'rtp': 'vim/'}
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'sonph/onehalf'
 Plug 'tpope/vim-surround'
+
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+
 Plug 'brooth/far.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'bling/vim-airline'
@@ -23,6 +26,12 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'gregsexton/matchtag'
 
 Plug 'ap/vim-css-color'
+Plug 'matze/vim-move'
+Plug 'zivyangll/git-blame.vim'
+
+Plug 'nikvdp/ejs-syntax'
+
+Plug 'mattn/emmet-vim'
 
 Plug 'grvcoelho/vim-javascript-snippets'
 
@@ -36,6 +45,7 @@ syntax on
 filetype plugin indent on
 set autoindent
 set mouse=a
+set tabstop=4
 set number
 set nohlsearch
 set belloff=all
@@ -51,6 +61,9 @@ filetype plugin on
 
 "let g:airline_theme='gruvbox'
 let g:airline_theme='onehalfdark'
+
+let g:user_emmet_mode='n'
+let g:user_emmet_leader_key=','
 
 set t_Co=256
 
@@ -88,6 +101,9 @@ nmap <Leader>gd <Plug>(coc-definition)
 nmap <Leader>gr <Plug>(coc-references)
 
 let g:prettier#config#single_quote = 'true'
+let g:prettier#config#tab_width = '2'
+let g:prettier#config#indent_style= 'space'
+let g:prettier#config#indent_size = '2'
 
 nmap <silent> <leader>j :wincmd h<CR>
 nmap <silent> <leader>k :wincmd l<CR>
