@@ -10,6 +10,8 @@ export ZSH="$HOME/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="robbyrussell"
 
+export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
+
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
@@ -38,10 +40,15 @@ alias gsh='git stash'
 alias gsp='git stash pop'
 alias gmr='git merge'
 
+alias grs='git reset --soft'
+alias grh='git reset --hard'
+
 alias cl='clear'
-alias bdl='cd ~/.vim/bundle'
+alias bdl='cd ~/.vim/plugged'
 alias kl='kill %1'
 alias cde='code'
+alias t='tmux'
+alias et='exit'
 
 gll() {
   local out sha q
