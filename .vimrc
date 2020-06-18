@@ -301,3 +301,4 @@ highlight DiffAdd guifg=black guibg=wheat1
 highlight DiffChange guifg=black guibg=skyblue1
 highlight DiffDelete guifg=black guibg=gray45 gui=none
 highlight DiffDelete guifg=black guibg=gray45 gui=none
+
