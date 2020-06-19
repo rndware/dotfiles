@@ -43,6 +43,8 @@ alias gmr='git merge'
 alias grs='git reset --soft'
 alias grh='git reset --hard'
 
+alias gcb='git checkout -b'
+
 alias cl='clear'
 alias bdl='cd ~/.vim/plugged'
 alias kl='kill %1'
@@ -93,3 +95,4 @@ gls() {
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
