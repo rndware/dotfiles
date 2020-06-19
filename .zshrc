@@ -50,6 +50,8 @@ alias cde='code'
 alias t='tmux'
 alias et='exit'
 
+alias tdev='tmux new-session \; split-window -h -p 20 \; split-window -v -p 45 \; attach'
+
 gll() {
   local out sha q
   while out=$(
