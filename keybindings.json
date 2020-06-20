@@ -10,14 +10,14 @@
         "when": "sideBarFocus && activeViewlet == 'workbench.view.scm'"
     },
     {
-        "key": "ctrl+s",
+        "key": "s",
         "command": "git.stage",
-        "when": "sideBarFocus && activeViewlet == 'workbench.view.scm'"
+        "when": "listFocus && sideBarFocus && activeViewlet == 'workbench.view.scm'"
     },
     {
-        "key": "ctrl+u",
+        "key": "u",
         "command": "git.unstage",
-        "when": "sideBarFocus && activeViewlet == 'workbench.view.scm'"
+        "when": "listFocus && sideBarFocus && activeViewlet == 'workbench.view.scm'"
     },
     {
         "key": "ctrl+e",
@@ -37,17 +37,17 @@
     {
         "key": "r",
         "command": "renameFile",
-        "when": "explorerViewletVisible && filesExplorerFocus"
+        "when": "listFocus && !inputFocus && explorerViewletVisible && filesExplorerFocus"
     },
     {
         "key": "i",
         "command": "explorer.newFile",
-        "when": "explorerViewletVisible && filesExplorerFocus"
+        "when": "listFocus && !inputFocus && explorerViewletVisible && filesExplorerFocus"
     },
     {
         "key": "o",
         "command": "explorer.newFolder",
-        "when": "explorerViewletVisible && filesExplorerFocus"
+        "when": "listFocus && !inputFocus && explorerViewletVisible && filesExplorerFocus"
     },
     {
         "key": "cmd+enter",
