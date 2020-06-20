@@ -65,6 +65,9 @@ let g:airline_theme='onehalfdark'
 let g:user_emmet_mode='n'
 let g:user_emmet_leader_key=','
 
+let NERDTreeMapJumpFirstChild='\i'
+let NERDTreeMapJumpLastChild='\k'
+
 set t_Co=256
 
 nnoremap d "xd
@@ -101,13 +104,14 @@ nmap <Leader>gd <Plug>(coc-definition)
 nmap <Leader>gr <Plug>(coc-references)
 
 let g:prettier#config#single_quote = 'true'
+
 let g:prettier#config#tab_width = 2
 let g:prettier#config#use_tabs = 'false'
 
 nmap <silent> <leader>j :wincmd h<CR>
 nmap <silent> <leader>k :wincmd l<CR>
 nmap <silent> J :wincmd h<CR>
-nmap <silent> ; :wincmd l<CR>
+nmap <silent> K :wincmd l<CR>
 
 nmap <Leader>gb :<C-u>call gitblame#echo()<CR>
 nmap <leader>] >>
@@ -150,4 +154,3 @@ set updatetime=750
 highlight DiffAdd guifg=black guibg=wheat1
 highlight DiffChange guifg=black guibg=skyblue1
 highlight DiffDelete guifg=black guibg=gray45 gui=none
-
