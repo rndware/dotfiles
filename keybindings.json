@@ -5,9 +5,9 @@
         "command": "toggleVim"
     },
     {
-        "key": "ctrl+a",
+        "key": "a",
         "command": "git.stageAll",
-        "when": "sideBarFocus && activeViewlet == 'workbench.view.scm'"
+        "when": "listFocus && sideBarFocus && activeViewlet == 'workbench.view.scm'"
     },
     {
         "key": "s",
@@ -27,12 +27,12 @@
     {
         "key": "shift+k",
         "command": "workbench.action.focusActiveEditorGroup",
-        "when": "sideBarFocus && activeViewlet == 'workbench.view.scm'"
+        "when": "listFocus && sideBarFocus && activeViewlet == 'workbench.view.scm'"
     },
     {
         "key": "shift+k",
         "command": "workbench.action.focusActiveEditorGroup",
-        "when": "explorerViewletVisible && filesExplorerFocus"
+        "when": "listFocus && !inputFocus && explorerViewletVisible && filesExplorerFocus"
     },
     {
         "key": "r",
