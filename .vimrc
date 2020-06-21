@@ -103,6 +103,8 @@ nmap s <Plug>(easymotion-overwin-f2)
 nmap <Leader>gd <Plug>(coc-definition)
 nmap <Leader>gr <Plug>(coc-references)
 
+nmap <leader><CR> :Buf<CR>
+
 let g:prettier#config#single_quote = 'true'
 
 let g:prettier#config#tab_width = 2
