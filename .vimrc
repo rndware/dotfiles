@@ -110,6 +110,8 @@ let g:prettier#config#single_quote = 'true'
 let g:prettier#config#tab_width = 2
 let g:prettier#config#use_tabs = 'false'
 
+autocmd VimEnter * NERDTree
+
 nmap <silent> <leader>j :wincmd h<CR>
 nmap <silent> <leader>k :wincmd l<CR>
 nmap <silent> J :wincmd h<CR>
