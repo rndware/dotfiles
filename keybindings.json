@@ -20,6 +20,11 @@
         "when": "listFocus && sideBarFocus && activeViewlet == 'workbench.view.scm'"
     },
     {
+        "key": "d",
+        "command": "git.clean",
+        "when": "listFocus && sideBarFocus && activeViewlet == 'workbench.view.scm'"
+    },
+    {
         "key": "ctrl+e",
         "command": "workbench.view.explorer",
         "when": "sideBarFocus && activeViewlet == 'workbench.view.scm'"
