@@ -75,6 +75,14 @@
       ]
     },
     {
+      "before": ["<leader>", "g", "d"],
+      "commands": ["editor.action.revealDefinition"]
+    },
+    {
+      "before": ["<leader>", "g", "r"],
+      "commands": ["editor.action.referenceSearch.trigger"]
+    },
+    {
       "before": ["<Leader>", "r", "n"],
       "commands": ["editor.action.rename"]
     },
