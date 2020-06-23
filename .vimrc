@@ -85,7 +85,9 @@ set bg=dark
 nmap <Leader>e <C-w>w
 nmap <Leader>q :qa<CR>
 nmap <Leader>qq :qa!<CR>
+nmap <c-q> :qa!<CR>
 nmap <Leader>s :w<CR>
+nmap <c-s> :w<CR>
 nmap <Leader>w :q<CR>
 nmap <Leader>f :Ag<CR>
 nmap <Leader>p :FZF<CR>
@@ -154,6 +156,8 @@ vnoremap K :m '<-2<CR>gv=gv
 
 let g:gitgutter_async=0
 set updatetime=750
+
+stty -ixon
 
 highlight DiffAdd guifg=black guibg=wheat1
 highlight DiffChange guifg=black guibg=skyblue1
