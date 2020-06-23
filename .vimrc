@@ -85,7 +85,6 @@ set bg=dark
 nmap <Leader>e <C-w>w
 nmap <Leader>q :qa<CR>
 nmap <Leader>qq :qa!<CR>
-nmap <c-q> :qa!<CR>
 nmap <Leader>s :w<CR>
 nmap <c-s> :w<CR>
 nmap <Leader>w :q<CR>
