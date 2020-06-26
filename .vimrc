@@ -67,6 +67,7 @@ let g:user_emmet_leader_key=','
 
 let NERDTreeMapJumpFirstChild='\i'
 let NERDTreeMapJumpLastChild='\k'
+let NERDTreeMapOpenVSplit='d'
 
 set t_Co=256
 
@@ -84,7 +85,7 @@ set bg=dark
 :let mapleader = " "
 nmap <Leader>e <C-w>w
 nmap <Leader>q :qa<CR>
-nmap <Leader>qq :qa!<CR>
+nmap <Leader>x :qa!<CR>
 nmap <Leader>s :w<CR>
 nmap <c-s> :w<CR>
 nmap <Leader>w :q<CR>
