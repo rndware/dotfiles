@@ -93,7 +93,8 @@ nmap <Leader>p :FZF<CR>
 nmap <Leader>n :NERDTree<CR>
 nmap <leader>vn :NERDTreeFind<CR>
 nmap <Leader>d :vsplit<CR>
-nmap <Leader>rn :Farr<CR>
+nmap <Leader>g :Farr<CR>
+nmap <leader>r :%s/
 nmap <Leader>ks :G<CR>
 nmap <Leader>kc :Gcommit<CR>
 nmap <Leader>kp :Gpush<CR>
