@@ -83,8 +83,12 @@
       "commands": ["editor.action.referenceSearch.trigger"]
     },
     {
-      "before": ["<Leader>", "r", "n"],
+      "before": ["<Leader>", "r"],
       "commands": ["editor.action.rename"]
+    },
+    {
+      "before": ["<Leader>", "g"],
+      "commands": ["workbench.action.replaceInFiles"]
     },
     {
       "before": ["s"],
