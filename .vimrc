@@ -85,7 +85,7 @@ set bg=dark
 :let mapleader = " "
 nmap <Leader>e <C-w>w
 nmap <Leader>q :qa<CR>
-nmap <Leader>x :qa!<CR>
+nmap <Leader>z :qa!<CR>
 nmap <Leader>s :w<CR>
 nmap <c-s> :w<CR>
 nmap <Leader>w :q<CR>
