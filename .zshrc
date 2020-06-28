@@ -72,15 +72,6 @@ _gitLogLineToHash="echo {} | grep -o '[a-f0-9]\{7\}' | head -1"
 _viewGitLogLine="$_gitLogLineToHash | xargs -I % sh -c 'git show --color=always % | diff-so-fancy'"
 _viewGitLogLineUnfancy="$_gitLogLineToHash | xargs -I % sh -c 'git show %'"
 
-# fcoc_preview - checkout git commit with previews
-glsc() {
-  local commit
-  commit=$( glNoGraph |
-    fzf --no-sort --reverse --tiebreak=index --no-multi \
-        --ansi --preview="$_viewGitLogLine" ) &&
-  git checkout $(echo "$commit" | sed "s/ .*//")
-}
-
 # fshow_preview - git commit browser with previews
 gls() {
     glNoGraph |
@@ -93,6 +84,15 @@ gls() {
 }
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# fcoc_preview - checkout git commit with previews
+glsc() {
+  local commit
+  commit=$( glNoGraph |
+    fzf --no-sort --reverse --tiebreak=index --no-multi \
+        --ansi --preview="$_viewGitLogLine" ) &&
+  git checkout $(echo "$commit" | sed "s/ .*//")
+}
 
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
