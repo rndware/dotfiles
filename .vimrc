@@ -95,7 +95,7 @@ nmap <Leader>n :NERDTree<CR>
 nmap <leader>vn :NERDTreeFind<CR>
 nmap <Leader>d :vsplit<CR>
 nmap <Leader>g :Farr<CR>
-nmap <leader>r :%s/
+nmap <leader>r :%s//g<Left><left>
 nmap <Leader>ks :G<CR>
 nmap <Leader>kc :Gcommit<CR>
 nmap <Leader>kp :Gpush<CR>
