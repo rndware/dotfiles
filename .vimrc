@@ -101,8 +101,9 @@ nmap <Leader>ks :G<CR>
 nmap <Leader>kc :Gcommit<CR>
 nmap <Leader>kp :Gpush<CR>
 nmap <Leader>= :Prettier<CR>
-nmap <Leader>/ gcc
 nmap s <Plug>(easymotion-overwin-f2)
+
+noremap <leader>/ :Commentary<CR>
 
 nmap <Leader>gd <Plug>(coc-definition)
 nmap <Leader>gr <Plug>(coc-references)
