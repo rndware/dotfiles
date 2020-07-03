@@ -68,6 +68,7 @@ let g:user_emmet_leader_key=','
 let NERDTreeMapJumpFirstChild='\i'
 let NERDTreeMapJumpLastChild='\k'
 let NERDTreeMapOpenVSplit='d'
+let NERDTreeMinimalUI=1
 
 set t_Co=256
 
