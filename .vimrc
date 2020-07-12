@@ -104,9 +104,9 @@ nmap s <Plug>(easymotion-overwin-f2)
 
 noremap <leader>/ :Commentary<CR>
 
-nmap <Leader>gd <Plug>(coc-definition)
-nmap <Leader>gr <Plug>(coc-references)
 nmap <Leader>r <Plug>(coc-rename)
+nmap gd <Plug>(coc-definition)
+nmap gr <Plug>(coc-references)
 
 nmap <leader><CR> :Buf<CR>
 
