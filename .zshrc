@@ -71,6 +71,7 @@ alias glNoGraph='git log --color=always --format="%C(auto)%h%d %s %C(black)%C(bo
 _gitLogLineToHash="echo {} | grep -o '[a-f0-9]\{7\}' | head -1"
 _viewGitLogLine="$_gitLogLineToHash | xargs -I % sh -c 'git show --color=always % | diff-so-fancy'"
 _viewGitLogLineUnfancy="$_gitLogLineToHash | xargs -I % sh -c 'git show %'"
+_viewGitFugative="$_gitLogLineToHash | xargs -I % sh -c 'nvim -c \"Gedit %\"'"
 
 # fshow_preview - git commit browser with previews
 gls() {
@@ -80,6 +81,7 @@ gls() {
                 --header "enter to view, alt-y to copy hash, alt-v to open in vim" \
                 --bind "enter:execute:$_viewGitLogLine   | less -R" \
                 --bind "alt-v:execute:$_viewGitLogLineUnfancy | vim -" \
+				        --bind "alt-f:execute:$_viewGitFugative" \
                 --bind "alt-y:execute:$_gitLogLineToHash | xclip"
 }
 
