@@ -98,6 +98,8 @@ nmap <Leader>g :Farr<CR>
 nmap <Leader>ks :G<CR>
 nmap <Leader>kc :Gcommit<CR>
 nmap <Leader>kp :Gpush<CR>
+nmap <Leader>ki :Gdiff<CR>
+nmap <Leader>kr :Gread<CR>
 nmap <Leader>= :Prettier<CR>
 nmap s <Plug>(easymotion-overwin-f2)
 
