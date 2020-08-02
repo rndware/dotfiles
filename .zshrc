@@ -81,7 +81,7 @@ gls() {
 		--header "enter to view, alt-y to copy hash, alt-v to open in vim, alt-f open with fugative" \
                 --bind "enter:execute:$_viewGitLogLine   | less -R" \
                 --bind "alt-v:execute:$_viewGitLogLineUnfancy | vim -" \
-				        --bind "alt-f:execute:$_viewGitFugative" \
+		--bind "alt-f:execute:$_viewGitFugative" \
                 --bind "alt-y:execute:$_gitLogLineToHash | xclip"
 }
 
