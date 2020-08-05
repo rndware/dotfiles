@@ -74,22 +74,22 @@
         "git.push"
       ]
     },
-    {
-      "before": ["<leader>", "g", "d"],
-      "commands": ["editor.action.revealDefinition"]
-    },
-    {
-      "before": ["<leader>", "g", "r"],
-      "commands": ["editor.action.referenceSearch.trigger"]
-    },
-    {
-      "before": ["<Leader>", "r"],
-      "commands": ["editor.action.rename"]
-    },
-    {
-      "before": ["<Leader>", "g"],
-      "commands": ["workbench.action.replaceInFiles"]
-    },
+      {
+        "before": ["<leader>", "g", "d"],
+        "commands": ["editor.action.revealDefinition"]
+      },
+      {
+        "before": ["<leader>", "g", "r"],
+        "commands": ["editor.action.referenceSearch.trigger"]
+      },
+      {
+        "before": ["<Leader>", "r"],
+        "commands": ["editor.action.rename"]
+      },
+      {
+        "before": ["<Leader>", "i"],
+        "commands": ["workbench.action.replaceInFiles"]
+      },
     {
       "before": ["s"],
       "after": ["<leader>", "<leader>", "2", "s"]
