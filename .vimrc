@@ -119,10 +119,10 @@ let g:prettier#config#use_tabs = 'false'
 
 autocmd VimEnter * NERDTree
 
-nmap <silent> <leader>j :wincmd h<CR>
-nmap <silent> <leader>k :wincmd l<CR>
-nmap <silent> J :wincmd h<CR>
-nmap <silent> K :wincmd l<CR>
+nnoremap <silent> <leader>j J<CR>
+nnoremap <silent> <leader>k K<CR>
+nnoremap <silent> J :wincmd h<CR>
+nnoremap <silent> K :wincmd l<CR>
 
 nmap <Leader>gb :<C-u>call gitblame#echo()<CR>
 nmap <leader>] >>
