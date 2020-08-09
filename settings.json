@@ -39,6 +39,12 @@
       ]
     },
     {
+      "before": ["<Leader>","j"],
+      "commands": [
+        "editor.action.joinLines"
+      ]
+    },
+    {
       "before": ["J"],
       "commands": [
         "workbench.action.navigateLeft"
