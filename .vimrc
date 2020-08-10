@@ -68,6 +68,7 @@ let g:user_emmet_leader_key=','
 let NERDTreeMapJumpFirstChild='\i'
 let NERDTreeMapJumpLastChild='\k'
 let NERDTreeMapOpenVSplit='d'
+let NERDTreeMinimalUI=1
 
 set t_Co=256
 
@@ -84,8 +85,7 @@ set bg=dark
 :map <C-S-f> :Ag<CR>
 :let mapleader = " "
 nmap <Leader>e <C-w>w
-nmap <Leader>q :qa<CR>
-nmap <Leader>z :qa!<CR>
+nmap <Leader>q :qa!<CR>
 nmap <Leader>s :w<CR>
 nmap <c-s> :w<CR>
 nmap <Leader>w :q<CR>
@@ -95,16 +95,20 @@ nmap <Leader>n :NERDTree<CR>
 nmap <leader>vn :NERDTreeFind<CR>
 nmap <Leader>d :vsplit<CR>
 nmap <Leader>g :Farr<CR>
-nmap <leader>r :%s/
 nmap <Leader>ks :G<CR>
 nmap <Leader>kc :Gcommit<CR>
 nmap <Leader>kp :Gpush<CR>
+nmap <Leader>ki :Gdiff<CR>
+nmap <Leader>kr :Gread<CR>
+nmap <Leader>ka :Gwrite<CR>
 nmap <Leader>= :Prettier<CR>
-nmap <Leader>/ gcc
 nmap s <Plug>(easymotion-overwin-f2)
 
-nmap <Leader>gd <Plug>(coc-definition)
-nmap <Leader>gr <Plug>(coc-references)
+noremap <leader>/ :Commentary<CR>
+
+nmap <Leader>r <Plug>(coc-rename)
+nmap gd <Plug>(coc-definition)
+nmap gr <Plug>(coc-references)
 
 nmap <leader><CR> :Buf<CR>
 
@@ -115,10 +119,10 @@ let g:prettier#config#use_tabs = 'false'
 
 autocmd VimEnter * NERDTree
 
-nmap <silent> <leader>j :wincmd h<CR>
-nmap <silent> <leader>k :wincmd l<CR>
-nmap <silent> J :wincmd h<CR>
-nmap <silent> K :wincmd l<CR>
+nnoremap <silent> <leader>j J<CR>
+nnoremap <silent> <leader>k K<CR>
+nnoremap <silent> J :wincmd h<CR>
+nnoremap <silent> K :wincmd l<CR>
 
 nmap <Leader>gb :<C-u>call gitblame#echo()<CR>
 nmap <leader>] >>

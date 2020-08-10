@@ -68,5 +68,13 @@
         "key": "enter",
         "command": "list.select",
         "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "ctrl+1",
+        "command": "extension.partialDiff.markSection1"
+    },
+    {
+        "key": "ctrl+2",
+        "command": "extension.partialDiff.markSection2AndTakeDiff"
     }
 ]
