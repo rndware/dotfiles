@@ -105,6 +105,7 @@ nmap <Leader>= :Prettier<CR>
 nmap s <Plug>(easymotion-overwin-f2)
 
 noremap <leader>/ :Commentary<CR>
+noremap <leader>j J<CR>
 
 nmap <Leader>r <Plug>(coc-rename)
 nmap gd <Plug>(coc-definition)
@@ -119,8 +120,6 @@ let g:prettier#config#use_tabs = 'false'
 
 autocmd VimEnter * NERDTree
 
-nnoremap <silent> <leader>j J<CR>
-nnoremap <silent> <leader>k K<CR>
 nnoremap <silent> J :wincmd h<CR>
 nnoremap <silent> K :wincmd l<CR>
 
