@@ -74,8 +74,8 @@ set t_Co=256
 
 nnoremap d "xd
 
-let g:ycm_key_list_select_completion=[]
-let g:ycm_key_list_previous_completion=[]
+inoremap <expr> <C-j> pumvisible() ? "\<C-N>" : "<C-j>"
+inoremap <expr> <C-k> pumvisible() ? "\<C-P>" : "<C-j>"
 
 "colorscheme gruvbox
 colorscheme onehalfdark
