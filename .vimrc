@@ -105,6 +105,8 @@ nmap <Leader>= :Prettier<CR>
 nmap s <Plug>(easymotion-overwin-f2)
 
 noremap <leader>/ :Commentary<CR>
+noremap <C-_> :Commentary<CR>
+
 noremap <leader>j J<CR>
 
 nmap <Leader>r <Plug>(coc-rename)
