@@ -126,14 +126,7 @@ nnoremap <silent> J :wincmd h<CR>
 nnoremap <silent> K :wincmd l<CR>
 
 nmap <Leader>gb :<C-u>call gitblame#echo()<CR>
-nmap <leader>] >>
-nmap <leader>[ <<
 noremap <Leader>y "+y
-
-nnoremap x "_x
-nnoremap d "_d
-nnoremap D "_D
-vnoremap d "_d
 
 let g:EasyMotion_smartcase = 1
 
