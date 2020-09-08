@@ -92,10 +92,14 @@
         "before": ["<Leader>", "r"],
         "commands": ["editor.action.rename"]
       },
-      {
-        "before": ["<Leader>", "i"],
-        "commands": ["workbench.action.replaceInFiles"]
-      },
+    {
+      "before": ["<Leader>", "o"],
+      "commands": ["workbench.action.replaceInFiles"]
+    },
+    {
+      "before": ["<Leader>", "i"],
+      "commands": ["editor.action.startFindReplaceAction"]
+    },
     {
       "before": ["s"],
       "after": ["<leader>", "<leader>", "2", "s"]
