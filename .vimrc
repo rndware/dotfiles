@@ -74,8 +74,8 @@ set t_Co=256
 
 nnoremap d "xd
 
-inoremap <expr> <C-j> pumvisible() ? "\<C-N>" : "<C-j>"
-inoremap <expr> <C-k> pumvisible() ? "\<C-P>" : "<C-j>"
+inoremap <expr> <S-j> pumvisible() ? "\<C-N>" : "<C-j>"
+inoremap <expr> <S-k> pumvisible() ? "\<C-P>" : "<C-j>"
 
 "colorscheme gruvbox
 colorscheme onehalfdark
