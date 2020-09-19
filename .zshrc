@@ -49,7 +49,7 @@ alias gcb='git checkout -b'
 alias cl='clear'
 alias bdl='cd ~/.vim/plugged'
 alias kl='kill %1'
-alias cde='code'
+alias ce='code'
 alias t='tmux'
 alias et='exit'
 
