@@ -39,7 +39,7 @@ alias gcl='git clone'
 alias gsh='git stash'
 alias gsp='git stash pop'
 alias gmr='git merge'
-alias gnu='git clean -fd'
+alias gnu='git clean -fd; gch .'
 
 alias grs='git reset --soft'
 alias grh='git reset --hard'
