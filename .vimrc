@@ -104,6 +104,8 @@ nmap <Leader>ka :Gwrite<CR>
 nmap <Leader>= :Prettier<CR>
 nmap s <Plug>(easymotion-overwin-f2)
 
+:nnoremap <Leader> @q
+
 noremap <leader>/ :Commentary<CR>
 noremap <C-_> :Commentary<CR>
 
