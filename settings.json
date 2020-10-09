@@ -28,6 +28,12 @@
       ]
     },
     {
+      "before": ["<Leader>", "h"],
+      "commands": [
+        "workbench.action.editorLayoutSingle"
+      ]
+    },
+    {
       "before": ["<Leader>", "d"],
       "commands": [
         "workbench.action.splitEditorRight"
