@@ -94,6 +94,7 @@ nmap <Leader>p :FZF<CR>
 nmap <Leader>n :enew<CR>
 nmap <leader>vn :NERDTreeFind<CR>
 nmap <Leader>d :vsplit<CR>
+nmap <Leader>D :on<CR>
 nmap <Leader>g :Farr<CR>
 nmap <Leader>ks :G<CR>
 nmap <Leader>kc :Gcommit<CR>
@@ -118,7 +119,6 @@ nmap gr <Plug>(coc-references)
 nmap <leader><CR> :Buf<CR>
 
 let g:prettier#config#single_quote = 'true'
-
 let g:prettier#config#tab_width = 2
 let g:prettier#config#use_tabs = 'false'
 
