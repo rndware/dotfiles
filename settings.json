@@ -28,7 +28,7 @@
       ]
     },
     {
-      "before": ["<Leader>", "h"],
+      "before": ["<Leader>", "D"],
       "commands": [
         "workbench.action.editorLayoutSingle"
       ]
