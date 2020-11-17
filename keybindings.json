@@ -5,6 +5,10 @@
         "command": "toggleVim"
     },
     {
+        "key": "ctrl+shift+t",
+        "command": "workbench.action.terminal.toggleTerminal"
+    },
+    {
         "key": "a",
         "command": "git.stageAll",
         "when": "listFocus && sideBarFocus && activeViewlet == 'workbench.view.scm'"
