@@ -44,6 +44,8 @@ alias gnu='git clean -fd; gch .'
 alias grs='git reset --soft'
 alias grh='git reset --hard'
 
+alias gra='git remote set-url'
+
 alias gcb='git checkout -b'
 
 alias cl='clear'
