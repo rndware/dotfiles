@@ -150,6 +150,8 @@ nmap <A-Down> <Plug>MoveLineDown
 vmap <A-Up> <Plug>MoveBlockUp
 vmap <A-Down> <Plug>MoveBlockDown
 
+vmap <C-S-v> <C-v>
+
 set shiftwidth=2
 
 vnoremap J :m '>+1<CR>gv=gv
