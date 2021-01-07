@@ -69,6 +69,18 @@
         "when": "listFocus && !inputFocus && explorerViewletVisible && filesExplorerFocus"
     },
     {
+        "key": "ctrl+shift+t",
+        "command": "workbench.action.terminal.focus"
+    },
+    {
+        "key": "ctrl+shift+e",
+        "command": "workbench.files.action.focusFilesExplorer"
+    },
+    {
+        "key": "ctrl+shift+s",
+        "command": "workbench.action.focusActiveEditorGroup"
+    },
+    {
         "key": "cmd+enter",
         "command": "renameFile",
         "when": "explorerViewletVisible && filesExplorerFocus"
