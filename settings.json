@@ -65,7 +65,7 @@
     },
     {
       "before": ["<Leader>", "t"],
-      "commands": ["workbench.action.terminal.toggleTerminal"]
+      "commands": ["workbench.action.togglePanel"]
     },
     {
       "before": [
