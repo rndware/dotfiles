@@ -81,6 +81,11 @@
         "command": "workbench.action.focusActiveEditorGroup"
     },
     {
+        "key": "ctrl+.",
+        "command": "editor.action.blockComment",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
         "key": "cmd+enter",
         "command": "renameFile",
         "when": "explorerViewletVisible && filesExplorerFocus"
