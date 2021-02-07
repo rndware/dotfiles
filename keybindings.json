@@ -69,6 +69,14 @@
         "when": "listFocus && !inputFocus && explorerViewletVisible && filesExplorerFocus"
     },
     {
+        "key": "ctrl+]",
+        "command": "editor.action.indentLines"
+    },
+    {
+        "key": "ctrl+[",
+        "command": "outdent"
+    },
+    {
         "key": "ctrl+shift+t",
         "command": "workbench.action.terminal.focus"
     },
