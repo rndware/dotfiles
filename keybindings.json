@@ -69,6 +69,11 @@
         "when": "listFocus && !inputFocus && explorerViewletVisible && filesExplorerFocus"
     },
     {
+        "key": "f",
+        "command": "filesExplorer.findInFolder",
+        "when": "listFocus && !inputFocus && explorerViewletVisible && filesExplorerFocus"
+    },
+    {
         "key": "ctrl+]",
         "command": "editor.action.indentLines"
     },
