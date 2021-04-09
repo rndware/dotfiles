@@ -129,6 +129,16 @@
       "commands": ["git.revertSelectedRanges"]
     },
     {
+      "before": [
+        "<leader>",
+        "h",
+        "n"
+      ],
+      "commands": [
+        "workbench.action.editor.nextChange"
+      ]
+    },
+    {
       "before": ["d"],
       "after": [ "\"", "_", "d" ]
     },
