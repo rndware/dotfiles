@@ -139,6 +139,16 @@
       ]
     },
     {
+      "before": [
+        "<leader>",
+        "h",
+        "p"
+      ],
+      "commands": [
+        "workbench.action.editor.previousChange"
+      ]
+    },
+    {
       "before": ["d"],
       "after": [ "\"", "_", "d" ]
     },
