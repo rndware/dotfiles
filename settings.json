@@ -1,5 +1,6 @@
 {
-  "vim.sneak": true,
+  "vim.easymotion": true,
+  "vim.sneak": false,
   "diffEditor.renderSideBySide": false,
   "editor.renderWhitespace": "all",
   "workbench.iconTheme": "vs-minimal",
@@ -19,6 +20,14 @@
       ],
       "commands": [
         "bookmarks.toggle"
+      ]
+    },
+    {
+      "before": [
+        "s"
+      ],
+      "after": [
+        "<leader>","<leader>","2","s"
       ]
     },
     {
@@ -83,7 +92,7 @@
         "w"
       ],
       "commands": [
-        ":q"
+        "workbench.action.closeActiveEditor"
       ]
     },
     {
@@ -357,7 +366,6 @@
       ]
     }
   ],
-  "vscode-w3cvalidation.validator-token": "Thu, 21 May 2020 15:35:20 GMT",
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -372,7 +380,6 @@
   "[vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "todo-tree.tree.showScanModeButton": false,
   "window.zoomLevel": -1,
   "editor.tabSize": 8,
   "editor.cursorStyle": "line",
