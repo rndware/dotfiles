@@ -124,6 +124,18 @@
     },
     {
       "before": [
+        "u",
+      ],
+      "commands": [
+        "undo"
+      ]
+    },
+    {
+        "before": ["<C-r>"],
+        "commands": ["redo"]
+    },
+    {
+      "before": [
         "<Leader>",
         "y"
       ],
@@ -355,6 +367,12 @@
     },
     {
       "before": [
+        "<Return>"
+      ],
+      "after": ["@","q"]
+    },
+    {
+      "before": [
         "="
       ],
       "after": [],
@@ -380,11 +398,11 @@
   "[vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "window.zoomLevel": -1,
   "editor.tabSize": 8,
   "editor.cursorStyle": "line",
   "editor.insertSpaces": false,
   "editor.lineNumbers": "on",
   "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
   "editor.wordWrap": "off",
+  "window.zoomLevel": -1,
 }
