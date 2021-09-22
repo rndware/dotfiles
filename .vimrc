@@ -24,6 +24,7 @@ Plug 'garbas/vim-snipmate'
 Plug 'prettier/vim-prettier', { 'do': 'npm install', 'branch': 'release/0.x' }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'gregsexton/matchtag'
+Plug 'stsewd/fzf-checkout.vim'
 
 Plug 'ap/vim-css-color'
 Plug 'matze/vim-move'
@@ -83,6 +84,7 @@ colorscheme onehalfdark
 set bg=dark
 :map <C-p> :FZF<CR>
 :map <C-S-f> :Ag<CR>
+:map <C-b> :GBranches<CR>
 :let mapleader = " "
 nmap <Leader>e <C-w>w
 nmap <Leader>q :qa!<CR>
