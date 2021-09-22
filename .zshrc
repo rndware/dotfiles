@@ -29,7 +29,7 @@ alias gcm='git commit'
 alias gch='git checkout'
 alias gps='git push'
 alias gpl='git pull'
-alias gbr='git branch'
+alias gbr="git for-each-ref --format='%(refname:short)' refs/heads | fzf | xargs git checkout"
 alias gst='git status'
 alias gdi='git diff'
 alias gap='git apply'
@@ -43,6 +43,9 @@ alias gnu='git clean -fd; gch .'
 
 alias grs='git reset --soft'
 alias grh='git reset --hard'
+alias grm='git restore --staged' 
+
+alias grn='git branch -m'
 
 alias gra='git remote set-url'
 
@@ -51,11 +54,15 @@ alias gcb='git checkout -b'
 alias cl='clear'
 alias bdl='cd ~/.vim/plugged'
 alias kl='kill %1'
-alias ce='code'
+alias ce='GTK_IM_MODULE="xim" code'
+# alias ce='code'
 alias t='tmux'
-alias et='exit'
+alias x='exit'
+# alias xt='exit'
 
 alias tdev='tmux new-session \; split-window -h -p 20 \; split-window -v -p 45 \; attach'
+
+alias v='vim'
 
 gll() {
   local out sha q
