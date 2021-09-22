@@ -62,7 +62,7 @@ alias x='exit'
 
 alias tdev='tmux new-session \; split-window -h -p 20 \; split-window -v -p 45 \; attach'
 
-alias v='vim'
+alias vi='nvim'
 
 gll() {
   local out sha q
