@@ -47,6 +47,16 @@
         "command": "extension.vim_ctrl+p",
         "when": "suggestWidgetVisible && vim.active && vim.use<C-p> && !inDebugRepl || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'CommandlineInProgress' || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'SearchInProgressMode'"
     },
+    {   
+        "key": "shift+j",
+        "command": "workbench.action.terminal.focusPreviousPane",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "shift+k",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "listFocus && sideBarFocus && activeViewlet == 'workbench.view.scm'"
+    },
     {
         "key": "shift+k",
         "command": "workbench.action.focusActiveEditorGroup",
