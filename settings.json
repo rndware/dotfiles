@@ -11,6 +11,12 @@
   "vim.leader": "<space>",
   "vim.useSystemClipboard": true,
   "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["<leader>", ";"],
+      "after": ["$", "%"]
+    }
+  ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": [
