@@ -1,193 +1,278 @@
 // Place your key bindings in this file to override the defaultsauto[]
 [
-    {
-        "key": "ctrl+shift+i",
-        "command": "toggleVim"
-    },
-    {
-        "key": "ctrl+shift+t",
-        "command": "workbench.action.terminal.toggleTerminal"
-    },
-    {
-        "key": "ctrl+shift+l",
-        "command": "bookmarksExplorer.focus"
-    },
-    {
-        "key": "ctrl+a",
-        "command": "git.stageAll",
-        "when": "listFocus && sideBarFocus && activeViewlet == 'workbench.view.scm'"
-    },
-    {
-        "key": "ctrl+s",
-        "command": "git.stage",
-        "when": "listFocus && sideBarFocus && activeViewlet == 'workbench.view.scm'"
-    },
-    {
-        "key": "ctrl+u",
-        "command": "git.unstage",
-        "when": "listFocus && sideBarFocus && activeViewlet == 'workbench.view.scm'"
-    },
-    {
-        "key": "ctrl+d",
-        "command": "git.clean",
-        "when": "listFocus && sideBarFocus && activeViewlet == 'workbench.view.scm'"
-    },
-    {
-        "key": "ctrl+e",
-        "command": "workbench.view.explorer",
-        "when": "sideBarFocus && activeViewlet == 'workbench.view.scm'"
-    },
-    {
-        "key": "shift+j",
-        "command": "extension.vim_ctrl+n",
-        "when": "suggestWidgetVisible && vim.active && vim.use<C-p> && !inDebugRepl || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'CommandlineInProgress' || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'SearchInProgressMode'"
-    },
-    {
-        "key": "shift+k",
-        "command": "extension.vim_ctrl+p",
-        "when": "suggestWidgetVisible && vim.active && vim.use<C-p> && !inDebugRepl || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'CommandlineInProgress' || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'SearchInProgressMode'"
-    },
-    {   
-        "key": "shift+j",
-        "command": "workbench.action.terminal.focusPreviousPane",
-        "when": "terminalFocus"
-    },
-    {
-        "key": "shift+k",
-        "command": "workbench.action.focusActiveEditorGroup",
-        "when": "listFocus && sideBarFocus && activeViewlet == 'workbench.view.scm'"
-    },
-    {
-        "key": "shift+k",
-        "command": "workbench.action.focusActiveEditorGroup",
-        "when": "listFocus && sideBarFocus && activeViewlet == 'workbench.view.scm'"
-    },
-    {
-        "key": "shift+k",
-        "command": "workbench.action.focusActiveEditorGroup",
-        "when": "listFocus && !inputFocus && explorerViewletVisible && filesExplorerFocus"
-    },
-    {
-        "key": "r",
-        "command": "renameFile",
-        "when": "listFocus && !inputFocus && explorerViewletVisible && filesExplorerFocus"
-    },
-    {
-        "key": "i",
-        "command": "explorer.newFile",
-        "when": "listFocus && !inputFocus && explorerViewletVisible && filesExplorerFocus"
-    },
-    {
-        "key": "o",
-        "command": "explorer.newFolder",
-        "when": "listFocus && !inputFocus && explorerViewletVisible && filesExplorerFocus"
-    },
-    {
-        "key": "f",
-        "command": "filesExplorer.findInFolder",
-        "when": "listFocus && !inputFocus && explorerViewletVisible && filesExplorerFocus"
-    },
-    {
-        "key": "t",
-        "command": "openInTerminal",
-        "when": "listFocus && !inputFocus && explorerViewletVisible && filesExplorerFocus"
-    },
-    {
-        "key": "alt+right",
-        "command": "editor.action.indentLines"
-    },
-    {
-        "key": "alt+left",
-        "command": "outdent"
-    },
-    {
-        "key": "ctrl+]",
-        "command": "editor.action.indentLines"
-    },
-    {
-        "key": "ctrl+[",
-        "command": "outdent"
-    },
-    {
-        "key": "ctrl+n",
-        "command": "workbench.action.files.newUntitledFile"
-    },
-    {
-        "key": "ctrl+shift+e",
-        "command": "workbench.files.action.focusFilesExplorer"
-    },
-    {
-        "key": "ctrl+shift+t",
-        "command": "workbench.action.terminal.focus"
-    },
-    {
-        "key": "ctrl+shift+s",
-        "command": "workbench.action.focusActiveEditorGroup"
-    },
-    {
-        "key": "cmd+enter",
-        "command": "renameFile",
-        "when": "explorerViewletVisible && filesExplorerFocus"
-    },
-    {
-        "key": "enter",
-        "command": "-renameFile",
-        "when": "explorerViewletVisible && filesExplorerFocus"
-    },
-    {
-        "key": "enter",
-        "command": "list.select",
-        "when": "listFocus && !inputFocus"
-    },
-    {
-        "key": "ctrl+1",
-        "command": "extension.partialDiff.markSection1"
-    },
-    {
-        "key": "ctrl+2",
-        "command": "extension.partialDiff.markSection2AndTakeDiff"
-    },
-    {
-        "key": "ctrl+shift+s",
-        "command": "-workbench.action.files.saveAs"
-    },
-    {
-        "key": "ctrl+shift+s",
-        "command": "-workbench.action.files.saveLocalFile",
-        "when": "remoteFileDialogVisible"
-    },
-    {
-        "key": "ctrl+shift+e",
-        "command": "-workbench.view.explorer"
-    },
-    {
-        "key": "ctrl+shift+e",
-        "command": "-workbench.action.quickOpenNavigatePreviousInFilePicker",
-        "when": "inFilesPicker && inQuickOpen"
-    },
-    {
-        "key": "ctrl+.",
-        "command": "editor.action.blockComment",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+shift+a",
-        "command": "-editor.action.blockComment",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+shift+m",
-        "command": "-workbench.actions.view.problems",
-        "when": "workbench.panel.markers.view.active"
-    },
-    {
-        "key": "ctrl+shift+k",
-        "command": "search.action.focusPreviousSearchResult",
-        "when": "hasSearchResult || inSearchEditor"
-    },
-    {
-        "key": "ctrl+shift+j",
-        "command": "search.action.focusNextSearchResult",
-        "when": "hasSearchResult || inSearchEditor"
-    }
+	{
+		"key": "cmd+shift+i",
+		"command": "toggleVim"
+	},
+	{
+		"key": "cmd+shift+t",
+		"command": "workbench.action.terminal.toggleTerminal"
+	},
+	{
+		"key": "cmd+shift+l",
+		"command": "bookmarksExplorer.focus"
+	},
+	{
+		"key": "cmd+a",
+		"command": "git.stageAll",
+		"when": "listFocus && sideBarFocus && activeViewlet == 'workbench.view.scm'"
+	},
+	{
+		"key": "cmd+s",
+		"command": "git.stage",
+		"when": "listFocus && sideBarFocus && activeViewlet == 'workbench.view.scm'"
+	},
+	{
+		"key": "cmd+u",
+		"command": "git.unstage",
+		"when": "listFocus && sideBarFocus && activeViewlet == 'workbench.view.scm'"
+	},
+	{
+		"key": "cmd+d",
+		"command": "git.clean",
+		"when": "listFocus && sideBarFocus && activeViewlet == 'workbench.view.scm'"
+	},
+	{
+		"key": "cmd+e",
+		"command": "workbench.view.explorer",
+		"when": "sideBarFocus && activeViewlet == 'workbench.view.scm'"
+	},
+	{
+		"key": "cmd+shift+j",
+		"command": "extension.vim_ctrl+n",
+		"when": "suggestWidgetVisible && vim.active && vim.use<C-p> && !inDebugRepl || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'CommandlineInProgress' || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'SearchInProgressMode'"
+	},
+	{
+		"key": "cmd+shift+k",
+		"command": "extension.vim_ctrl+p",
+		"when": "suggestWidgetVisible && vim.active && vim.use<C-p> && !inDebugRepl || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'CommandlineInProgress' || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'SearchInProgressMode'"
+	},
+	{
+		"key": "cmd+k",
+		"command": "workbench.action.terminal.focusNextPane",
+		"when": "terminalFocus"
+	},
+	{
+		"key": "cmd+j",
+		"command": "workbench.action.terminal.focusPreviousPane",
+		"when": "terminalFocus"
+	},
+	{
+		"key": "shift+k",
+		"command": "workbench.action.focusActiveEditorGroup",
+		"when": "listFocus && sideBarFocus && activeViewlet == 'workbench.view.scm'"
+	},
+	{
+		"key": "shift+k",
+		"command": "workbench.action.focusActiveEditorGroup",
+		"when": "listFocus && !inputFocus && explorerViewletVisible && filesExplorerFocus"
+	},
+	{
+		"key": "r",
+		"command": "renameFile",
+		"when": "listFocus && !inputFocus && explorerViewletVisible && filesExplorerFocus"
+	},
+	{
+		"key": "i",
+		"command": "explorer.newFile",
+		"when": "listFocus && !inputFocus && explorerViewletVisible && filesExplorerFocus"
+	},
+	{
+		"key": "o",
+		"command": "explorer.newFolder",
+		"when": "listFocus && !inputFocus && explorerViewletVisible && filesExplorerFocus"
+	},
+	{
+		"key": "f",
+		"command": "filesExplorer.findInFolder",
+		"when": "listFocus && !inputFocus && explorerViewletVisible && filesExplorerFocus"
+	},
+	{
+		"key": "t",
+		"command": "openInTerminal",
+		"when": "listFocus && !inputFocus && explorerViewletVisible && filesExplorerFocus"
+	},
+	{
+		"key": "cmd+]",
+		"command": "editor.action.indentLines"
+	},
+	{
+		"key": "cmd+[",
+		"command": "outdent"
+	},
+	{
+		"key": "cmd+n",
+		"command": "workbench.action.files.newUntitledFile"
+	},
+	{
+		"key": "cmd+shift+e",
+		"command": "workbench.files.action.focusFilesExplorer"
+	},
+	{
+		"key": "cmd+shift+t",
+		"command": "workbench.action.terminal.focus"
+	},
+	{
+		"key": "cmd+shift+s",
+		"command": "workbench.action.focusActiveEditorGroup"
+	},
+	{
+		"key": "cmd+enter",
+		"command": "renameFile",
+		"when": "explorerViewletVisible && filesExplorerFocus"
+	},
+	{
+		"key": "enter",
+		"command": "-renameFile",
+		"when": "explorerViewletVisible && filesExplorerFocus"
+	},
+	{
+		"key": "enter",
+		"command": "list.select",
+		"when": "listFocus && !inputFocus"
+	},
+	{
+		"key": "cmd+1",
+		"command": "extension.partialDiff.markSection1"
+	},
+	{
+		"key": "cmd+2",
+		"command": "extension.partialDiff.markSection2AndTakeDiff"
+	},
+	{
+		"key": "cmd+shift+s",
+		"command": "-workbench.action.files.saveAs"
+	},
+	{
+		"key": "cmd+shift+s",
+		"command": "-workbench.action.files.saveLocalFile",
+		"when": "remoteFileDialogVisible"
+	},
+	{
+		"key": "cmd+shift+e",
+		"command": "-workbench.view.explorer"
+	},
+	{
+		"key": "cmd+shift+e",
+		"command": "-workbench.action.quickOpenNavigatePreviousInFilePicker",
+		"when": "inFilesPicker && inQuickOpen"
+	},
+	{
+		"key": "cmd+.",
+		"command": "editor.action.blockComment",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "cmd+shift+a",
+		"command": "-editor.action.blockComment",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "cmd+shift+m",
+		"command": "-workbench.actions.view.problems",
+		"when": "workbench.panel.markers.view.active"
+	},
+	{
+		"key": "cmd+shift+k",
+		"command": "search.action.focusPreviousSearchResult",
+		"when": "hasSearchResult || inSearchEditor"
+	},
+	{
+		"key": "cmd+shift+j",
+		"command": "search.action.focusNextSearchResult",
+		"when": "hasSearchResult || inSearchEditor"
+	},
+	{
+		"key": "cmd+b",
+		"command": "git.checkout",
+	},
+	{
+		"key": "cmd+o",
+		"command": "extension.vim_ctrl+o",
+		"when": "editorTextFocus && vim.active && vim.use<C-o> && !inDebugRepl"
+	},
+	{
+		"key": "cmd+i",
+		"command": "extension.vim_ctrl+i",
+		"when": "editorTextFocus && vim.active && vim.use<C-i> && !inDebugRepl"
+	},
+	{
+		"key": "cmd+r",
+		"command": "redo",
+		"when": "editorTextFocus && vim.active && vim.use<C-i> && !inDebugRepl"
+	},
+	{
+		"key": "ctrl+i",
+		"command": "-extension.vim_ctrl+i",
+		"when": "editorTextFocus && vim.active && vim.use<C-i> && !inDebugRepl"
+	},
+	{
+		"key": "shift+enter",
+		"command": "openReferenceToSide",
+		"when": "listFocus && referenceSearchVisible && !inputFocus"
+	},
+	{
+		"key": "ctrl+enter",
+		"command": "-openReferenceToSide",
+		"when": "listFocus && referenceSearchVisible && !inputFocus"
+	},
+	{
+		"key": "shift+enter",
+		"command": "explorer.openToSide",
+		"when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
+	},
+	{
+		"key": "ctrl+enter",
+		"command": "-explorer.openToSide",
+		"when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
+	},
+	{
+		"key": "shift+enter",
+		"command": "interactive.execute",
+		"when": "resourceScheme == 'vscode-interactive'"
+	},
+	{
+		"key": "ctrl+enter",
+		"command": "-interactive.execute",
+		"when": "resourceScheme == 'vscode-interactive'"
+	},
+	{
+		"key": "cmd+u",
+		"command": "extension.vim_ctrl+u",
+		"when": "editorTextFocus && vim.active && vim.use<C-u> && !inDebugRepl"
+	},
+	{
+		"key": "ctrl+u",
+		"command": "-extension.vim_ctrl+u",
+		"when": "editorTextFocus && vim.active && vim.use<C-u> && !inDebugRepl"
+	},
+	{
+		"key": "ctrl+up",
+		"command": "-extension.vim_ctrl+up",
+		"when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode != 'Insert'"
+	},
+	{
+		"key": "ctrl+d",
+		"command": "-extension.vim_ctrl+d",
+		"when": "editorTextFocus && vim.active && vim.use<C-d> && !inDebugRepl"
+	},
+	{
+		"key": "ctrl+down",
+		"command": "-extension.vim_ctrl+down",
+		"when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode != 'Insert'"
+	},
+	{
+		"key": "cmd+k cmd+d",
+		"command": "-editor.action.moveSelectionToNextFindMatch",
+		"when": "editorFocus"
+	},
+	{
+		"key": "cmd+d",
+		"command": "-extension.vim_cmd+d",
+		"when": "editorTextFocus && vim.active && vim.use<D-d> && !inDebugRepl"
+	},
+	{
+		"key": "cmd+d",
+		"command": "extension.vim_ctrl+d"
+	}
 ]
