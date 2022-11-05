@@ -4,195 +4,419 @@
   "diffEditor.renderSideBySide": false,
   "editor.renderWhitespace": "all",
   "workbench.iconTheme": "vs-minimal",
-  "workbench.colorTheme": "Monokai",
   "workbench.editor.showTabs": false,
-  "workbench.editor.enablePreviewFromQuickOpen": false,
   "vim.leader": "<space>",
   "vim.useSystemClipboard": true,
-  "search.useReplacePreview": false,
-  "editor.suggest.snippetsPreventQuickSuggestions": false,
-  "flowJiraCommitPrefix.pattern": "/^(feat|fix)|((?!([A-Z0-9]{1,10})-?$)[A-Z]{1}[A-Z0-9]+-\\d+)/g",
+  "editor.suggest.snippetsPreventQuickSuggestions": false, 
   "vim.visualModeKeyBindings": [
     {
       "before": ["<leader>", ";"],
       "after": ["$", "%"]
-    }
+    },
+    {
+      "before": [
+        "<leader>",
+        "="
+      ],
+      "commands": [
+        "editor.action.formatSelection"
+      ]
+    },
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": ["<Leader>", "m", "a"],
-      "commands": ["bookmarks.toggle"]
+      "before": [
+        "<Leader>",
+        "m",
+        "a"
+      ],
+      "commands": [
+        "bookmarks.toggle"
+      ]
     },
     {
-      "before": ["s"],
-      "after": ["<leader>", "<leader>", "2", "s"]
+      "before": [
+        "s"
+      ],
+      "after": [
+        "<leader>","<leader>","2","s"
+      ]
     },
     {
-      "before": ["<Leader>", "m", "p"],
-      "commands": ["bookmarks.jumpToPrevious"]
+      "before": [
+        "<Leader>",
+        "m",
+        "p"
+      ],
+      "commands": [
+        "bookmarks.jumpToPrevious"
+      ]
     },
     {
-      "before": ["<Leader>", "m", "l"],
-      "commands": ["bookmarks.listFromAllFiles"]
+      "before": [
+        "<Leader>",
+        "m",
+        "l"
+      ],
+      "commands": [
+        "bookmarks.listFromAllFiles"
+      ]
     },
     {
-      "before": ["T"],
-      "commands": ["open-buffers.openBuffer"]
+      "before": [
+        "T"
+      ],
+      "commands": [
+        "open-buffers.openBuffer"
+      ]
     },
     {
-      "before": ["<Leader>", "m", "n"],
-      "commands": ["bookmarks.jumpToNext"]
+      "before": [
+        "<Leader>",
+        "m",
+        "n"
+      ],
+      "commands": [
+        "bookmarks.jumpToNext"
+      ]
     },
     {
-      "before": ["<Leader>", "e"],
-      "commands": ["workbench.files.action.focusFilesExplorer"]
+      "before": [
+        "<Leader>",
+        "e"
+      ],
+      "commands": [
+        "workbench.files.action.focusFilesExplorer"
+      ]
     },
     {
-      "before": ["<Leader>", "q"],
-      "commands": ["workbench.action.quit"]
+      "before": [
+        "<Leader>",
+        "q"
+      ],
+      "commands": [
+        "workbench.action.quit"
+      ]
     },
     {
-      "before": ["<Leader>", "w"],
-      "commands": ["workbench.action.closeActiveEditor"]
+      "before": [
+        "<Leader>",
+        "w"
+      ],
+      "commands": [
+        "workbench.action.closeActiveEditor"
+      ]
     },
     {
-      "before": ["<Leader>", "D"],
-      "commands": ["workbench.action.editorLayoutSingle"]
+      "before": [
+        "<Leader>",
+        "D"
+      ],
+      "commands": [
+        "workbench.action.editorLayoutSingle"
+      ]
     },
     {
-      "before": ["<Leader>", "d"],
-      "commands": ["workbench.action.splitEditorRight"]
+      "before": [
+        "<Leader>",
+        "d"
+      ],
+      "commands": [
+        "workbench.action.splitEditorRight"
+      ]
     },
     {
-      "before": ["<Leader>", "s"],
-      "commands": ["workbench.action.files.save"]
+      "before": [
+        "<Leader>",
+        "s"
+      ],
+      "commands": [
+        "workbench.action.files.save"
+      ]
     },
     {
-      "before": ["u"],
-      "commands": ["undo"]
+      "before": [
+        "u",
+      ],
+      "commands": [
+        "undo"
+      ]
     },
     {
-      "before": ["<command-r>"],
-      "commands": ["redo"]
+        "before": ["<C-r>"],
+        "commands": ["redo"]
     },
     {
-      "before": ["F"],
-      "commands": ["actions.find"]
+      "before": [
+        "<Leader>",
+        "y"
+      ],
+      "commands": [
+        "editor.action.quickFix"
+      ]
     },
     {
-      "before": ["<Leader>", "y"],
-      "commands": ["editor.action.quickFix"]
+      "before": [
+        "<Leader>",
+        "j"
+      ],
+      "commands": [
+        "editor.action.joinLines"
+      ]
     },
     {
-      "before": ["<Leader>", "j"],
-      "commands": ["editor.action.joinLines"]
+      "before": [
+        "J"
+      ],
+      "commands": [
+        "workbench.action.navigateLeft"
+      ]
     },
     {
-      "before": ["J"],
-      "commands": ["workbench.action.navigateLeft"]
+      "before": [
+        "<Leader>",
+        "l"
+      ],
+      "commands": [
+        "workbench.action.toggleEditorGroupLock"
+      ]
     },
     {
-      "before": ["K"],
-      "commands": ["workbench.action.navigateRight"]
+      "before": [
+        "K"
+      ],
+      "commands": [
+        "workbench.action.navigateRight"
+      ]
     },
     {
-      "before": ["<Leader>", "c", "n"],
-      "commands": ["merge-conflict.next"]
+      "before": [
+        "<Leader>",
+        "b"
+      ],
+      "commands": [
+        "workbench.action.toggleSidebarVisibility"
+      ]
     },
     {
-      "before": ["<Leader>", "c", "p"],
-      "commands": ["merge-conflict.previous"]
+      "before": [
+        "<Leader>",
+        "p"
+      ],
+      "commands": [
+        "workbench.action.quickOpen"
+      ]
     },
     {
-      "before": ["<Leader>", "b"],
-      "commands": ["workbench.action.toggleSidebarVisibility"]
+      "before": [
+        "<Leader>",
+        "f"
+      ],
+      "commands": [
+        "workbench.action.findInFiles"
+      ]
     },
     {
-      "before": ["<Leader>", "p"],
-      "commands": ["workbench.action.quickOpen"]
+      "before": [
+        "<Leader>",
+        "k",
+        "s"
+      ],
+      "commands": [
+        "workbench.view.scm"
+      ]
     },
     {
-      "before": ["<Leader>", "f"],
-      "commands": ["workbench.action.findInFiles"]
+      "before": [
+        "<Leader>",
+        "k",
+        "p"
+      ],
+      "commands": [
+        "git.push"
+      ]
     },
     {
-      "before": ["<Leader>", "k", "s"],
-      "commands": ["workbench.view.scm"]
+      "before": [
+        "<Leader>",
+        "k",
+        "a"
+      ],
+      "commands": [
+        "git.checkout"
+      ]
     },
     {
-      "before": ["<Leader>", "k", "p"],
-      "commands": ["git.push"]
+      "before": [
+        "g",
+        "d"
+      ],
+      "commands": [
+        "editor.action.revealDefinition"
+      ]
+    },
+
+    {
+      "before": [
+        "g",
+        "s"
+      ],
+      "commands": [
+        "editor.action.revealDefinitionAside"
+      ]
+    },
+
+    {
+      "before": [
+        "g",
+        "r"
+      ],
+      "commands": [
+        "editor.action.referenceSearch.trigger"
+      ]
     },
     {
-      "before": ["g", "d"],
-      "commands": ["editor.action.revealDefinition"]
+      "before": [
+        "<leader>",
+        "r"
+      ],
+      "commands": [
+        "editor.action.rename"
+      ]
     },
     {
-      "before": ["g", "s"],
-      "commands": ["editor.action.revealDefinitionAside"]
+      "before": [
+        "<Leader>",
+        "o"
+      ],
+      "commands": [
+        "workbench.action.replaceInFiles"
+      ]
     },
     {
-      "before": ["g", "r"],
-      "commands": ["editor.action.referenceSearch.trigger"]
+      "before": [
+        "<Leader>",
+        "i"
+      ],
+      "commands": [
+        "editor.action.startFindReplaceAction"
+      ]
     },
     {
-      "before": ["<leader>", "r"],
-      "commands": ["editor.action.rename"]
+      "before": [
+        "<leader>",
+        "h",
+        "u"
+      ],
+      "commands": [
+        "git.revertSelectedRanges"
+      ]
     },
     {
-      "before": ["<Leader>", "o"],
-      "commands": ["workbench.action.replaceInFiles"]
+      "before": [
+        "<leader>",
+        "h",
+        "p"
+      ],
+      "commands": [
+        "workbench.action.editor.previousChange"
+      ]
     },
     {
-      "before": ["<Leader>", "i"],
-      "commands": ["editor.action.startFindReplaceAction"]
+      "before": [
+        "<leader>",
+        "h",
+        "n"
+      ],
+      "commands": [
+        "workbench.action.editor.nextChange"
+      ]
     },
     {
-      "before": ["<leader>", "h", "u"],
-      "commands": ["git.revertSelectedRanges"]
+      "before": [
+        "<leader>",
+        "h",
+        "x"
+      ],
+      "commands": [
+        "git.clean"
+      ]
     },
     {
-      "before": ["<leader>", "h", "p"],
-      "commands": ["workbench.action.editor.previousChange"]
+      "before": [
+        "<leader>",
+        "e",
+        "n"
+      ],
+      "commands": [
+        "editor.action.marker.next"
+      ]
     },
     {
-      "before": ["<leader>", "h", "n"],
-      "commands": ["workbench.action.editor.nextChange"]
+      "before": [
+        "<leader>",
+        "e",
+        "p"
+      ],
+      "commands": [
+        "editor.action.marker.prev"
+      ]
     },
     {
-      "before": ["<leader>", "e", "n"],
-      "commands": ["editor.action.marker.next"]
+      "before": [
+        "<leader>",
+        "="
+      ],
+      "commands": [
+        "editor.action.formatDocument"
+      ]
     },
     {
-      "before": ["<leader>", "e", "p"],
-      "commands": ["editor.action.marker.prev"]
+      "before": [
+        "<Leader>",
+        "t"
+      ],
+      "commands": [
+        "workbench.action.togglePanel"
+      ]
     },
     {
-      "before": ["<leader>", "="],
-      "commands": ["editor.action.formatDocument"]
+      "before": [
+        "<Leader>",
+        "/"
+      ],
+      "commands": [
+        "editor.action.commentLine"
+      ]
     },
     {
-      "before": ["<Leader>", "t"],
-      "commands": ["workbench.action.togglePanel"]
+      "before": [
+        "ctrl",
+        "n"
+      ],
+      "commands": [
+        "workbench.action.files.newUntitledFile"
+      ]
     },
     {
-      "before": ["<Leader>", "/"],
-      "commands": ["editor.action.commentLine"]
+      "before": [
+        "<Leader>",
+        "c"
+      ],
+      "commands": [
+        "workbench.action.closeAllGroups"
+      ]
     },
     {
-      "before": ["ctrl", "n"],
-      "commands": ["workbench.action.files.newUntitledFile"]
+      "before": [
+        "<Return>"
+      ],
+      "after": ["@","q"]
     },
     {
-      "before": ["<Leader>", "c"],
-      "commands": ["workbench.action.closeAllGroups"]
-    },
-    {
-      "before": ["<Return>"],
-      "after": ["@", "q"]
-    },
-    {
-      "before": ["="],
+      "before": [
+        "="
+      ],
       "after": [],
       "commands": [
         {
@@ -202,6 +426,9 @@
       ]
     }
   ],
+  "workbench.colorCustomizations": {
+    "sideBarSectionHeader.foreground": "#d7ca17"
+  },
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -218,32 +445,23 @@
   },
   "editor.tabSize": 2,
   "editor.cursorStyle": "line",
+  "editor.insertSpaces": true,
   "editor.lineNumbers": "on",
   "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
   "editor.wordWrap": "off",
-  "terminal.integrated.defaultProfile.osx": "zsh",
-  "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "editor.renderControlCharacters": true,
-  "git.autofetch": true,
-  "editor.suggestSelection": "first",
-  "files.exclude": {
-    "**/.classpath": true,
-    "**/.project": true,
-    "**/.settings": true,
-    "**/.factorypath": true
+  "editor.fontSize": 13,
+  "window.zoomLevel": -1,
+  "workbench.activityBar.visible": false,
+  "workbench.colorTheme": "Monokai",
+  "[scss]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
   },
   "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features",
-    "files.insertFinalNewline": true
+    "editor.defaultFormatter": "vscode.json-language-features"
   },
+  "terminal.integrated.defaultProfile.linux": "tmux",
+  "gitlens.codeLens.enabled": false,
+  "gitlens.blame.highlight.enabled": false,
+  "gitlens.currentLine.enabled": false,
   "diffEditor.ignoreTrimWhitespace": false,
-  "workbench.activityBar.visible": false,
-  "workbench.colorCustomizations": {
-    "sideBarSectionHeader.foreground": "#d7ca17"
-  },
-  "timeline.excludeSources": ["timeline.localHistory"],
-  "breadcrumbs.enabled": false,
-  "window.zoomLevel": -1
 }
