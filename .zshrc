@@ -27,8 +27,9 @@ fi
 
 alias gcm='git commit'
 alias gch='git checkout'
-alias gps='git push origin ${git_current_branch'
-alias gpl='git pull origin ${git_current_branch}'
+alias gps='git push origin $(git_current_branch)'
+alias gpl='git pull origin $(git_current_branch)'
+alias gft='git fetch'
 alias gbr="git for-each-ref --format='%(refname:short)' refs/heads | fzf | xargs git checkout"
 alias gst='git status'
 alias gdi='git diff'
