@@ -25,12 +25,16 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
   alias soundfix="pulseaudio --kill; pulseaudio --start"
 fi
 
+alias copy='xclip -sel clip'
+alias emu='/home/adam/Android/Sdk/emulator/emulator @Zebra_Mobile_Device_API_30'
+
 alias gcm='git commit'
 alias gch='git checkout'
 alias gps='git push origin $(git_current_branch)'
 alias gpl='git pull origin $(git_current_branch)'
 alias gft='git fetch'
 alias gbr="git for-each-ref --format='%(refname:short)' refs/heads | fzf | xargs git checkout"
+alias gbc="git rev-parse --abbrev-ref HEAD | tr -d '\n' | xclip -selection clipboard"
 alias gst='git status'
 alias gdi='git diff'
 alias gap='git apply'
@@ -102,8 +106,3 @@ glsc() {
   git checkout $(echo "$commit" | sed "s/ .*//")
 }
 
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-
-alias copy='xclip -sel clip'
-
-alias emu='/home/adam/Android/Sdk/emulator/emulator @Zebra_Mobile_Device_API_30'
