@@ -3,8 +3,13 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'sonph/onehalf', {'rtp': 'vim/'}
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
-Plug 'sonph/onehalf'
+" Plug 'sonph/onehalf'
 Plug 'tpope/vim-surround'
+
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.1' }
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -75,14 +80,12 @@ set t_Co=256
 
 nnoremap d "xd
 
-inoremap <expr> <S-j> pumvisible() ? "\<C-N>" : "<C-j>"
-inoremap <expr> <S-k> pumvisible() ? "\<C-P>" : "<C-j>"
-
 "colorscheme gruvbox
 colorscheme onehalfdark
 
 set bg=dark
-:map <C-p> :FZF<CR>
+" :map <C-p> :FZF<CR>
+nnoremap <C-p> <cmd>Telescope find_files<cr>
 :map <C-S-f> :Ag<CR>
 :map <C-b> :GBranches<CR>
 :let mapleader = " "
@@ -91,7 +94,8 @@ nmap <Leader>q :qa!<CR>
 nmap <Leader>s :w<CR>
 nmap <c-s> :w<CR>
 nmap <Leader>w :q<CR>
-nmap <Leader>f :Ag<CR>
+" nmap <Leader>f :Ag<CR>
+nnoremap <Leader>f <cmd>Telescope live_grep<cr>
 nmap <Leader>p :FZF<CR>
 nmap <Leader>n :enew<CR>
 nmap <leader>vn :NERDTreeFind<CR>
@@ -162,8 +166,25 @@ vnoremap K :m '<-2<CR>gv=gv
 let g:gitgutter_async=0
 set updatetime=750
 
-stty -ixon
+" stty -ixon
 
 highlight DiffAdd guifg=black guibg=wheat1
 highlight DiffChange guifg=black guibg=skyblue1
 highlight DiffDelete guifg=black guibg=gray45 gui=none
+
+lua <<EOF
+local telescope = require('telescope')
+
+-- Configure the keybindings for the fuzzy finder
+telescope.setup {
+  defaults = {
+    mappings = {
+      i = {
+		['<C-j>'] = "move_selection_next",
+		['<C-k>'] = "move_selection_previous",
+		["<esc>"] = "close"
+	  },
+    }
+  }
+}
+EOF
