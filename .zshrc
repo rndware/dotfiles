@@ -53,13 +53,8 @@ alias gra='git remote set-url'
 alias gcb='git checkout -b'
 
 alias cl='clear'
-alias bdl='cd ~/.vim/plugged'
 alias kl='kill %1'
 alias ce='GTK_IM_MODULE="xim" code'
-# alias ce='code'
-alias t='tmux'
-alias x='exit'
-# alias xt='exit'
 
 alias tdev='tmux new-session \; split-window -h -p 20 \; split-window -v -p 45 \; attach'
 
@@ -109,3 +104,6 @@ glsc() {
 
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
+alias copy='xclip -sel clip'
+
+alias emu='/home/adam/Android/Sdk/emulator/emulator @Zebra_Mobile_Device_API_30'
