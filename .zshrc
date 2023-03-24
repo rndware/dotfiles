@@ -25,6 +25,7 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
   alias soundfix="pulseaudio --kill; pulseaudio --start"
 fi
 
+alias ipaddr="hostname -I | awk '{print \$1}'"
 alias copy='xclip -sel clip'
 alias emu='/home/adam/Android/Sdk/emulator/emulator @Zebra_Mobile_Device_API_30'
 
@@ -42,6 +43,7 @@ alias glo='git log'
 alias gad='git add'
 alias gcl='git clone'
 alias gsh='git stash'
+alias gsha='git stash --include-untracked'
 alias gsp='git stash pop'
 alias gmr='git merge'
 alias gnu='git clean -fd; gch .'
