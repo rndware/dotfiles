@@ -514,6 +514,4 @@
     "workbench.startupEditor": "none",
     "window.zoomLevel": -1,
     "workbench.activityBar.location": "hidden",
-    "gitlab.aiAssistedCodeSuggestions.enabled": true,
-    "gitlab.aiAssistedCodeSuggestions.preferredAccount": "AdamSmithToshibagcs",
   }
